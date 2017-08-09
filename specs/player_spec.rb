@@ -25,8 +25,7 @@ class PlayerTest < Minitest::Test
   end
 
   def test_player_takes_turn
-    @dice.roll
-    @player1.takes_turn(@dice.result)
+    @player1.takes_turn(@dice)
     assert(@player1.position.between?(1, 6))
   end
 
