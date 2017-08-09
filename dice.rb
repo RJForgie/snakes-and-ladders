@@ -5,11 +5,11 @@ class Dice
 
   def initialize
     @sides = 6
-    @result = 0
+    # @result = 0
   end
 
   def roll
-    @result = 1 + rand(@sides)
+    return 1 + rand(@sides)
   end
 
   def weighted_roll

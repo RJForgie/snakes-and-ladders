@@ -19,8 +19,12 @@ class Player
     @position = 1 + rand(6)
   end
 
-  def takes_turn(dice_roll)
-    @position += dice_roll
+  def takes_turn()
+    # dice.roll
+    @position += 1
+    @turn_order += 1
   end
+
+  
 
 end
